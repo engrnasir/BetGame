@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <header>
+        <h1>Place Your Bets!</h1>
+        <h2>The current jackpot is $<span id="jackpot">0</span></h2>
+        <button id="btn-check-winner">ARE YOU A WINNER?</button>
+        <p>Today's Winning Numbers: <span id="winning-number">0,0,0</span></p>
+    </header>  
+    <main>
+        <section id="choose-numbers">
+            <h1>Select 3 numbers</h1>
+            <div id="numbers-container"></div> 
+            
+        </section>
+        <section id="choose-bet-amount">
+            <h1>How much will you bet?</h1> 
+            <div id="bet-amounts-container"></div>
+            <p>Amount bet: $<span id="total-amt">0</span></p>
+        </section>
+    </main> 
+    <section id="results">        
+        <button class="inactive" disabled id="btn-buy-ticket">Buy Ticket</button>
+        <h1>Your Tickets</h1>
+        <div id="purchased-tickets-container"></div>        
+    </section>    
+    <script type="text/javascript" src="app.js"></script>
+</body>
+</html>
